@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DocumentationFile>bin\Pipelines.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Pipelines</PackageId>
+    <Version>0.0.1-beta</Version>
+    <Authors>Brad Sheldrick</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>Pipelines;Fluent;</PackageTags>
+    <Description>A library for building fluent pipeline functions for .NET.</Description>
+    <Copyright>Brad Sheldrick</Copyright>
+    <PackageProjectUrl>https://github.com/bsheldrick/pipelines</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/bsheldrick/pipelines</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+      <_Parameter1>Pipelines.Tests</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+</Project>
