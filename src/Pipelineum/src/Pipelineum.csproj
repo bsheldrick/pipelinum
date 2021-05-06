@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <DocumentationFile>bin\Pipelines.xml</DocumentationFile>
+    <DocumentationFile>bin\Pipelineum.xml</DocumentationFile>
     <LangVersion>9</LangVersion>
   </PropertyGroup>
 
@@ -23,7 +23,7 @@
 
   <ItemGroup>
     <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
-      <_Parameter1>Pipelines.Tests</_Parameter1>
+      <_Parameter1>Pipelineum.Tests</_Parameter1>
     </AssemblyAttribute>
   </ItemGroup>
 
