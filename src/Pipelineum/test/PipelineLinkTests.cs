@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 
-namespace Pipelines.Tests
+namespace Pipelineum.Tests
 {
     public class PipelineLinkTests
     {

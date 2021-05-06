@@ -1,6 +1,6 @@
-# Pipelines
+# Pipelineum
 
-Pipelines is an open-source library for building simple, type-safe, pipeline functions for .NET.
+Pipelineum is an open-source library for building simple, type-safe, pipeline functions for .NET.
 
 ## Example
 
@@ -21,12 +21,12 @@ var func = Pipeline
     })
     .Next(input =>      // input is double
     {
-        return new { Message = "Hello, Pipelines!" }; // output is anonymous type
+        return new { Message = "Hello, Pipelineum!" }; // output is anonymous type
     })
     .End();
 
 // execute the pipeline function, remember the first input type was string...
 var result = func("hello");
 
-Console.WriteLine(result.Message) // Hello, Pipelines!
+Console.WriteLine(result.Message) // Hello, Pipelineum!
 ```

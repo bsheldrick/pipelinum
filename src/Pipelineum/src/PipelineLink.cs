@@ -1,7 +1,6 @@
 using System;
-using System.Threading.Tasks;
 
-namespace Pipelines
+namespace Pipelineum
 {
     internal class PipelineLink
     {
@@ -16,30 +15,10 @@ namespace Pipelines
         {
             PrevLink = prev;
 
-            if (prev != null)
+            if (prev is not null)
             {
                 prev.NextLink = this;
             }
-        }
-
-        private PipelineLink GetFirstPipelineLink()
-        {
-            var link = PrevLink;
-
-            do
-            {
-                link = link.PrevLink;
-            }
-            while (link.PrevLink != null);
-
-            return link;
-        }
-
-        public Func<TFirst, Task<TIn>> EndAsync()
-        {
-            var link = GetFirstPipelineLink();
-
-            return input => Task.FromResult((TIn)link.Func.Invoke(input));
         }
 
         public Func<TFirst, TIn> End()
@@ -69,6 +48,18 @@ namespace Pipelines
             };
 
             return new PipelineLink<TOut, TFirst>(this);
+        }
+
+        protected PipelineLink GetFirstPipelineLink()
+        {
+            var link = PrevLink;
+
+            while (link.PrevLink is not null)
+            {
+                link = link.PrevLink;
+            }
+
+            return link;
         }
     }
 }

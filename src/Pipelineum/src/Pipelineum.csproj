@@ -4,19 +4,20 @@
     <TargetFramework>net5.0</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <DocumentationFile>bin\Pipelines.xml</DocumentationFile>
+    <LangVersion>9</LangVersion>
   </PropertyGroup>
 
   <PropertyGroup>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageId>Pipelines</PackageId>
+    <PackageId>Pipelineum</PackageId>
     <Version>0.0.1-beta</Version>
     <Authors>Brad Sheldrick</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageTags>Pipelines;Fluent;</PackageTags>
-    <Description>A library for building fluent pipeline functions for .NET.</Description>
+    <PackageTags>Pipelines;</PackageTags>
+    <Description>A library for building simple pipeline functions for .NET.</Description>
     <Copyright>Brad Sheldrick</Copyright>
-    <PackageProjectUrl>https://github.com/bsheldrick/pipelines</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/bsheldrick/pipelines</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/bsheldrick/pipelineum</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/bsheldrick/pipelineum</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
